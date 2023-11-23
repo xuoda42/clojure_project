@@ -22,7 +22,7 @@
     name))
 ;(def config
 ;  {:player player/player
-;   :enemy player/troll})
+;   :enemy player/orc})
 (defn- mire-handle-client [in out]
   (binding [*in* (io/reader in)
             *out* (io/writer out)

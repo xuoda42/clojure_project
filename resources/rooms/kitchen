@@ -1,4 +1,4 @@
 {:desc "You find yourself in a room with a round table in the middle."
  :exits {:west :promenade :east :hallway}
  :items #{:keys}
- :monster :troll}
+ :monster :orc}

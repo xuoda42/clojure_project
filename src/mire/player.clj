@@ -57,7 +57,7 @@
 
 
 (def player (create-character "you" 6))
-(def troll (create-character "troll" 4))
+(def orc (create-character "orc" 4))
 
 
 

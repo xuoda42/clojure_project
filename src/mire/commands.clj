@@ -22,7 +22,7 @@
 
 (def config
   {:player player/player
-   :enemy player/troll})
+   :enemy player/orc})
 (defn move
   "\"♬ We gotta get out of this place... ♪\" Give a direction."
   [direction]
@@ -122,12 +122,12 @@
          "You can't do that!")))
 
 
-(defn fight-troll []
+(defn fight-orc []
   (let [kitchen-room (@rooms/rooms :kitchen)
-        troll-character player/troll]
+        orc-character player/orc]
     (dosync
       (alter player/*current-room* (constantly kitchen-room))
-      (alter player/*inventory* conj troll-character)
-      (alter (:inhabitants kitchen-room) conj (:name troll-character)))
-    (str "You have entered the kitchen and encountered a troll!\n"
+      (alter player/*inventory* conj orc-character)
+      (alter (:inhabitants kitchen-room) conj (:name orc-character)))
+    (str "You have entered the kitchen and encountered a orc!\n"
          "Prepare for battle!\n")))
